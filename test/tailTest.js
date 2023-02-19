@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual');
+const assertEqual = require('../assertEqual');
 
 // tail function returns all items of the array that occur after the first instance,
 // but not including the first instance.
