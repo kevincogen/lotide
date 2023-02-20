@@ -1,7 +1,7 @@
 const assertEqual = require('../assertEqual');
 
 //Function head returns the first item in the array
-const head = require('../head')
+const head = require('../head');
 
 //Test cases
 
