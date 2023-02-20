@@ -11,4 +11,5 @@ const letterPositions = function(sentence) {
   delete results[" "];
   return results;
 };
-console.log(letterPositions("lighthouse in the house"));
+
+module.exports = letterPositions;
