@@ -14,6 +14,4 @@ const flatten = function(inputArray) {
   }
   return flatArray;
 };
-//console Test
-console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
-console.log(flatten([1, 2, 3, ["what", "about", "strings"], [3, 4, 5, 1000000], 5, [6, 0, -123], -8]));
+module.exports = flatten;
