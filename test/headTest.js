@@ -1,17 +1,21 @@
 const assertEqual = require('../assertEqual');
 
-//Function head returns the first item in the array
-const head = require('../head');
+//Mocha and Chai Tests
+const assert = require('chai').assert;
+const head   = require('../head');
 
-//Test cases
+describe("#head", () => {
+  it("returns 1 for [1, 2, 3]", () => {
+    assert.strictEqual(head([1, 2, 3]), 1);
+  });
+});
 
-//returns 'three'
-console.log(head(['three', 2, 3, '5']))
-
-//asserts equal using only the head of the array 
-
-//returns Assertion Passed
-console.log(assertEqual(head([5,6,7]), 5))
-
-//returns Assertion Passed
-console.log(assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello"))
+it("returns '5' for ['5']", () => {
+  assert.strictEqual(head(['5']), '5'); 
+});
+it("returns 'three' for ['three', 2, 3, '5']", () => {
+  assert.strictEqual(head(['three', 2, 3, '5']), 'three'); 
+});
+it("returns 'Hello' for [Hello', 'Lighthouse', 'Labs']", () => {
+  assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello"); 
+});
