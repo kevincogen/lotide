@@ -18,7 +18,7 @@ const takeUntil = require('./takeUntil');
 const without = require('./without');
 
 module.exports = {
-  //assertArraysEqual: assertArraysEqual,
+  assertArraysEqual: assertArraysEqual,
   assertEqual: assertEqual,
   assertObjectsEqual: assertObjectsEqual,
   countLetters: countLetters,
