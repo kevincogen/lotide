@@ -1,6 +1,3 @@
-
-// without function
-
 const without = function(source, itemsToRemove) {
   let itemsRemoved = [];
 
@@ -16,4 +13,7 @@ const without = function(source, itemsToRemove) {
   return itemsRemoved;
 };
 
-console.log(without([1,2,3,4,5], [1,3,4])); // expected output [2,5]
+module.exports = without;
+
+
+// console.log(without([1,2,3,4,5], [1,3,4])); // expected output [2,5]
